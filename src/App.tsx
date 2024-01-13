@@ -1,11 +1,13 @@
 import Sidebar from './components/molecules/Sidebar';
+import TrendingBar from './components/molecules/TrendingBar';
 
 export default function App() {
   return (
-    <div className="grid grid-cols-4 text-3xl text-white">
+    <div className="grid grid-cols-12 text-3xl text-white">
       <Sidebar />
-      {/* <div className="bg-green-500 col-span-2">Kotak 2</div>
-      <div className="bg-red-500">Kotak 3</div> */}
+      <div className="bg-black col-span-5">Kotak 2</div>
+      <TrendingBar />
     </div>
   );
 }
+354;

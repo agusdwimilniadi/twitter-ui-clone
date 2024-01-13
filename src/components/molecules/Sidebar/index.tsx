@@ -6,6 +6,7 @@ import { CgMoreO, CgNotes } from 'react-icons/cg';
 import { FiUsers } from 'react-icons/fi';
 import { FaRegUser, FaXTwitter } from 'react-icons/fa6';
 import { useState } from 'react';
+import { MdVerified } from 'react-icons/md';
 
 const dataSidebar = [
   {
@@ -51,7 +52,7 @@ const Sidebar = () => {
     setOpenOption(!openOption);
   };
   return (
-    <div className="border-r-[0.1px] h-screen  overflow-y border-white/25 ps-[25%] py-1">
+    <div className="col-span-3 border-r-[0.1px] h-screen  overflow-y border-white/25 ps-[25%] py-1">
       <div className="flex flex-col h-full justify-between relative">
         <div>
           <div className="bg-white/10 w-fit flex">
@@ -77,7 +78,7 @@ const Sidebar = () => {
           </div>
         </div>
         {/* BUTTON PROFILE */}
-
+        {/* CSS Tooltip */}
         {openOption && (
           <>
             <div className="bg-black z-10 shadow-custom w-full absolute bottom-20 rounded-xl">
@@ -93,7 +94,6 @@ const Sidebar = () => {
             <div className="bg-black shadow-custom absolute bottom-[80px] w-10 h-10  left-1/2 transform -translate-x-1/2 rotate-45"></div>
           </>
         )}
-
         <div
           onClick={handleOpenOption}
           className="flex justify-between items-center hover:bg-white/10 me-5 p-3 rounded-full hover:cursor-pointer"
@@ -107,8 +107,10 @@ const Sidebar = () => {
               />
             </div>
             <div className="text-xs ms-3  flex flex-col">
-              <p className="font-bold">Username Saya</p>
-              <p className="font-medium text-zinc-500">@usernamesaya</p>
+              <p className="font-bold flex items-center gap-1">
+                Agus Dwi Milniadi <MdVerified color="#1DA1F2" />
+              </p>
+              <p className="font-medium text-zinc-500">@agusdwimilniadi</p>
             </div>
           </div>
           <div className="me-5">
