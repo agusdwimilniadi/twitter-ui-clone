@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* * {
+  border: 1px solid white;
+} */
+body {
+  background-color: black;
+}
+
+.shadow-custom {
+  box-shadow: 0 0 4px 0.2px white;
+}
+
+.segitiga3 {
+  height: 0px;
+  width: 0px;
+  border-top: solid 120px orange;
+  border-left: solid 80px transparent;
+  border-right: solid 80px transparent;
+  margin-bottom: 20px;
+}
