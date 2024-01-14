@@ -52,7 +52,7 @@ const Sidebar = () => {
     setOpenOption(!openOption);
   };
   return (
-    <div className="col-span-3 border-r-[0.1px] h-screen  overflow-y border-white/25 ps-[25%] py-1">
+    <div className="col-span-3 border-r-[0.1px] max-h-screen  overflow-y border-white/25 ps-[25%] py-1">
       <div className="flex flex-col h-full justify-between relative">
         <div>
           <div className="bg-white/10 w-fit flex">
