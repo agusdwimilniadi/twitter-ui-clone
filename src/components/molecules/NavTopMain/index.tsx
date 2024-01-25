@@ -8,7 +8,7 @@ const NavMain = () => {
         <NavbarTab label="For You" isActive />
         <NavbarTab label="Following" />
       </div>
-      <span className="px-5 hover:bg-white/10 cursor-pointer flex items-center justify-center">
+      <span className="px-5 hover:bg-white/10 cursor-pointer hidden sm:flex items-center justify-center">
         <IoSettingsOutline size={18} />
       </span>
     </div>

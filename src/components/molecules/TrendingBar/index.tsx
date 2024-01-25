@@ -6,7 +6,7 @@ import { WHO_TO_FOLLOW } from '../../../constant/data';
 
 const TrendingBar = () => {
   return (
-    <div className="border-l-[0.1px] me-24 col-span-4 h-screen overflow-y-scroll hide-scroll   border-white/25 pt-2 ps-10">
+    <div className="border-l-[0.1px] me-24 col-span-4 h-screen overflow-y-scroll hide-scroll   border-white/25 pt-2 ps-10 sm:block hidden">
       <div className="relative">
         <IoIosSearch className="absolute top-3 left-3" size={20} />
         <input

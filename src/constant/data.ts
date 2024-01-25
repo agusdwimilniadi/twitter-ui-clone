@@ -9,7 +9,7 @@ export const WHO_TO_FOLLOW: IWhoToFollow[] = [
   {
     id: 1,
     image:
-      'https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/4ad7519a76d605fe3e842ea91b6eb8b4~c5_100x100.jpeg?lk3s=a5d48078&x-expires=1705413600&x-signature=2zCSiRoLh3M%2FbGLRt8SjBbgvgPs%3D',
+      'https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/4ad7519a76d605fe3e842ea91b6eb8b4~c5_100x100.jpeg?lk3s=a5d48078&x-expires=1705586400&x-signature=omQuMBdWPr60LIb2nHDeM9Z5F4U%3D',
     name: 'Sang Pengejar S.Kom',
     username: '@pengejar_s.kom',
     isVerified: true,

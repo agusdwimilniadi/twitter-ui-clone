@@ -17,6 +17,11 @@ const AccountItem = ({
       <div className="flex items-center gap-2 ">
         <div className="w-12">
           <img
+            onError={({ currentTarget }) => {
+              currentTarget.onerror = null; // prevents looping
+              currentTarget.src =
+                'https://iconicentertainment.in/wp-content/uploads/2013/11/dummy-image-square.jpg';
+            }}
             src={image}
             alt="logo-account"
             className=" object-cover rounded-full"

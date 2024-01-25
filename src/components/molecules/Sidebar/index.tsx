@@ -52,7 +52,7 @@ const Sidebar = () => {
     setOpenOption(!openOption);
   };
   return (
-    <div className="col-span-3 border-r-[0.1px] max-h-screen  overflow-y border-white/25 ps-[25%] py-1">
+    <div className="col-span-3 border-r-[0.1px] max-h-screen  overflow-y border-white/25 ps-[25%] py-1 sm:block hidden ">
       <div className="flex flex-col h-full justify-between relative">
         <div>
           <div className="bg-white/10 w-fit flex">
@@ -60,6 +60,11 @@ const Sidebar = () => {
               src="/assets/images/logo-x.jpg"
               alt="logo-x"
               className="w-16 object-cover"
+              onError={({ currentTarget }) => {
+                currentTarget.onerror = null; // prevents looping
+                currentTarget.src =
+                  'https://iconicentertainment.in/wp-content/uploads/2013/11/dummy-image-square.jpg';
+              }}
             />
           </div>
           <div className="flex flex-col">
@@ -104,6 +109,11 @@ const Sidebar = () => {
                 src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp"
                 alt="profile"
                 className="w-10 h-10 rounded-full border"
+                onError={({ currentTarget }) => {
+                  currentTarget.onerror = null; // prevents looping
+                  currentTarget.src =
+                    'https://iconicentertainment.in/wp-content/uploads/2013/11/dummy-image-square.jpg';
+                }}
               />
             </div>
             <div className="text-xs ms-3  flex flex-col">
