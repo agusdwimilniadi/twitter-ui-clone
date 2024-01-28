@@ -12,9 +12,9 @@ const Content = () => {
       <div className="flex my-2 gap-1">
         <div className="mx-3 my-2">
           <img
-            src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/5219609524c6731e93b5c40ced1e0b0d~c5_100x100.jpeg?lk3s=a5d48078&x-expires=1705586400&x-signature=5s7vV8eXz5LVImYzpghTyDdGY0U%3D"
+            src="https://iconicentertainment.in/wp-content/uploads/2013/11/dummy-image-square.jpg"
             alt="img-profile"
-            className="w-16 rounded-full object-cover"
+            className=" h-10 rounded-full object-cover"
             onError={({ currentTarget }) => {
               currentTarget.onerror = null; // prevents looping
               currentTarget.src =
@@ -28,7 +28,7 @@ const Content = () => {
             <MdVerified color="#1DA1F2" />
             <p className="text-white/50">@bachtyarrr · 16h</p>
           </div>
-          <p>apakah ada yang mau jadi cewe ku guys disini?</p>
+          <p>BARCELONA KALAH DI TANGGAL 2-8 Januari 2024</p>
           <div className="my-2 me-5">
             <img
               onError={({ currentTarget }) => {
@@ -36,7 +36,7 @@ const Content = () => {
                 currentTarget.src =
                   'https://iconicentertainment.in/wp-content/uploads/2013/11/dummy-image-square.jpg';
               }}
-              src="https://www.telkomsel.com/sites/default/files/2023-03/ilustrasi%20artikel%20september%20week%203-106.png"
+              src="https://pbs.twimg.com/media/GE358rFakAAT-ej?format=jpg&name=medium"
               alt="post-image"
               className="rounded-xl max-h-[30rem] max-w-full object-contain "
             />

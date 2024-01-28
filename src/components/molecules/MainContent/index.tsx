@@ -6,7 +6,7 @@ import { IoSettingsOutline } from 'react-icons/io5';
 
 const MainContent = () => {
   return (
-    <div className="bg-black sm:col-span-5 col-span-12 hide-scroll overflow-y-scroll  h-screen ">
+    <div>
       <div className="h-full ">
         <div>
           <div className="flex sm:hidden items-center justify-between p-3">

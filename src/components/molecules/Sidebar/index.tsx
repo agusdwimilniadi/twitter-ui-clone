@@ -12,38 +12,47 @@ const dataSidebar = [
   {
     icon: <GoHomeFill size={30} />,
     label: 'Home',
+    to: '/',
   },
   {
     icon: <GoSearch size={30} />,
     label: 'Explore',
+    to: '/explore',
   },
   {
     icon: <IoMdNotificationsOutline size={30} />,
     label: 'Notification',
+    to: '/notification',
   },
   {
     icon: <HiOutlineEnvelope size={30} />,
     label: 'Messages',
+    to: '/message',
   },
   {
     icon: <CgNotes size={30} />,
     label: 'List',
+    to: '/list',
   },
   {
     icon: <FiUsers size={30} />,
     label: 'Communities',
+    to: '/communities',
   },
   {
     icon: <FaXTwitter size={30} />,
     label: 'Premium',
+    to: '/premium',
   },
   {
     icon: <FaRegUser size={30} />,
     label: 'Profile',
+    to: '/profile',
   },
   {
     icon: <CgMoreO size={30} />,
     label: 'More',
+    to: '/more',
   },
 ];
 const Sidebar = () => {
@@ -70,6 +79,7 @@ const Sidebar = () => {
           <div className="flex flex-col">
             {dataSidebar.map((item) => (
               <SidebarItem
+                to={item.to}
                 key={item.label}
                 icon={item.icon}
                 label={item.label}
